@@ -1,7 +1,5 @@
 # KALIANAK PLATFORM - WEB FRONTEND
 
-![alt text](../backend_screenshot.png)
-
 ![React](https://img.shields.io/badge/React-19-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Vite](https://img.shields.io/badge/Vite-Build-yellow)
