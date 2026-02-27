@@ -60,37 +60,37 @@ export const STAFF_CONTENT = {
     {
       name: "Vulan",
       bio: "Pendiri & Penjaga Resep Rahasia. Memulai segalanya di tahun 1998.",
-      image: "images/section_staff/_personal_vulan.jpeg"
+      image: "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_staff/_personal_vulan.jpeg"
     },
     {
       name: "Mie",
       bio: "Sang Ahli Bara. Memastikan ikan dipanggang dengan kematangan sempurna.",
-      image: "images/section_staff/_personal_mie.jpeg"
+      image: "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_staff/_personal_mie.jpeg"
     },
     {
       name: "Lis",
       bio: "Senyum di Garis Depan. Menyambut setiap tamu dengan kehangatan.",
-      image: "images/section_staff/_personal_lis.jpeg"
+      image: "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_staff/_personal_lis.jpeg"
     },
     {
       name: "Shelina",
       bio: "Penerus Semangat. Membawa inovasi tanpa melupakan akar tradisi.",
-      image: "images/section_staff/_personal_antie.jpeg"
+      image: "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_staff/_personal_antie.jpeg"
     },
     {
       name: "Abdulla",
       bio: "Ratu Sambal. Meracik pedas dan segar yang legendaris.",
-      image: "images/section_staff/_personal_bror.jpeg"
+      image: "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_staff/_personal_bror.jpeg"
     },
     {
       name: "Staff",
       bio: "Pencari Kesegaran. Memilih ikan terbaik langsung dari nelayan setiap subuh.",
-      image: "images/section_staff/_personal_staff.jpeg"
+      image: "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_staff/_personal_staff.jpeg"
     },
     {
       name: "Isna",
       bio: "Ahli Rempah. Memastikan bumbu meresap hingga ke serat ikan.",
-      image: "images/section_staff/_personal_isna.jpeg"
+      image: "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_staff/_personal_isna.jpeg"
     }
   ]
 };

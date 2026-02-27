@@ -63,10 +63,10 @@ function App() {
       </nav>
 
       {/* 1. HERO SECTION */}
-      <ParallaxSection 
+      <ParallaxSection
           id="hero"
-          imageUrl="public/images/index/index_bg.png" 
-          overlayImageUrl="public/images/index/index_overlay.png"
+          imageUrl="https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_bg.png"
+          overlayImageUrl="https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_overlay.png"
           speed={0.5}
           overlayOpacity="bg-black/30"
           isOverlayFrame={true}
@@ -102,8 +102,8 @@ function App() {
             <FadeIn className="order-2 md:order-1">
               <div className="relative group max-w-md md:max-w-full mx-auto">
                 <div className="absolute -inset-2 border border-ember-900/50 transform translate-x-1 translate-y-1 z-0 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
-                <img 
-                  src="images/about/about.png" 
+                <img
+                  src="https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/about/about.png"
                   alt="Ibu cooking" 
                   className="relative z-10 w-full aspect-square md:aspect-auto md:h-[65vh] object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border-2 border-[#500000]"
                 />
@@ -142,7 +142,7 @@ function App() {
 
       {/* 3. SIGNATURE EXPERIENCE */}
       <ParallaxSection 
-        imageUrl="images/section_3/section_3_bg.jpeg"
+        imageUrl="https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_3/section_3_bg.jpeg"
         overlayOpacity="bg-[#4a0000]/70 backdrop-blur-[1px]"
         heightClass="min-h-[90vh]"
         speed={0.4}
@@ -196,7 +196,7 @@ function App() {
       {/* 5. THE GRILL */}
       <ParallaxSection 
         id="grill"
-        imageUrl="images/section_5/section_5_bg.jpeg" 
+        imageUrl="https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/section_5/section_5_bg.jpeg"
         overlayOpacity="bg-gradient-to-t from-black via-black/60 to-transparent"
       >
         <div className="grid md:grid-cols-2 gap-12 items-center">
