@@ -50,7 +50,7 @@ function App() {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-charcoal/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="font-serif text-xl md:text-2xl font-bold tracking-widest uppercase text-white">
-            IBK<span className="text-ember-500">.</span>
+            Ikan Bakar Kalianak
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium tracking-widest uppercase opacity-90">
             <a href="#about" className="hover:text-ember-500 transition-colors">Cerita</a>
@@ -305,7 +305,7 @@ function App() {
                <SocialIcon href="#"><div className="font-bold text-sm md:text-lg px-1">Tk</div></SocialIcon>
             </div>
             <div className="font-serif text-2xl md:text-4xl font-bold tracking-[0.2em] uppercase text-white mb-2">
-              IBK<span className="text-ember-500">.</span>
+              Ikan Bakar Kalianak
             </div>
             <p className="text-[8px] md:text-xs text-gray-700 uppercase tracking-widest">
               {FOOTER_CONTENT.copyright}
