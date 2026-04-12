@@ -34,6 +34,7 @@ const SocialIcon: React.FC<SocialIconProps> = ({ href, children }) => (
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +42,12 @@ function App() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -65,8 +72,14 @@ function App() {
       {/* 1. HERO SECTION */}
       <ParallaxSection
           id="hero"
-          imageUrl="https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_bg.png"
-          overlayImageUrl="https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_overlay.png"
+          imageUrl={isMobile
+            ? "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_bg_mobile.png"
+            : "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_bg.png"
+          }
+          overlayImageUrl={isMobile
+            ? "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_overlay_mobile.webp"
+            : "https://s3.ikanbakarkalianak.store/kalianak-media/web_frontend/images/index/index_overlay.png"
+          }
           speed={0.5}
           overlayOpacity="bg-black/30"
           isOverlayFrame={true}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadi Member Kalianak</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100dvh;
+      background: #051622;
+      color: #DEB992;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .logo {
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(222,185,146,0.5);
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: #DEB992;
+      margin-bottom: 0.25rem;
+    }
+    .tier {
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #FFB800;
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(222,185,146,0.1);
+      border: 1px solid rgba(222,185,146,0.2);
+      border-radius: 999px;
+      padding: 0.4rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #FFB800;
+      margin-bottom: 2rem;
+    }
+    .coming-soon {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #DEB992;
+      margin-bottom: 0.75rem;
+    }
+    .subtitle {
+      font-size: 0.9rem;
+      color: rgba(222,185,146,0.5);
+      line-height: 1.6;
+      max-width: 280px;
+      margin: 0 auto 2.5rem;
+    }
+    .store-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: #DEB992;
+      color: #051622;
+      border: none;
+      border-radius: 14px;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 900;
+      width: 100%;
+      max-width: 280px;
+      cursor: default;
+      opacity: 0.85;
+      margin: 0 auto;
+    }
+    .store-icon { font-size: 1.4rem; }
+    .perks {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      max-width: 260px;
+      text-align: left;
+    }
+    .perk {
+      font-size: 0.82rem;
+      color: rgba(222,185,146,0.55);
+      display: flex;
+      gap: 0.5rem;
+    }
+    .perk-icon { color: #FFB800; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+  <div class="logo">Ikan Bakar Kalianak</div>
+  <h1>Jadi Member</h1>
+  <div class="tier">Loyalty Program</div>
+
+  <div id="content"></div>
+
+  <div class="perks">
+    <div class="perk"><span class="perk-icon">★</span><span>Kumpulkan poin setiap pembelian</span></div>
+    <div class="perk"><span class="perk-icon">★</span><span>Tukar poin jadi diskon</span></div>
+    <div class="perk"><span class="perk-icon">★</span><span>Promo eksklusif member</span></div>
+    <div class="perk"><span class="perk-icon">★</span><span>Naik level Bronze → Silver → Gold</span></div>
+  </div>
+
+  <script>
+    var ua = navigator.userAgent;
+    var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+    var isAndroid = /Android/.test(ua);
+    var content = document.getElementById('content');
+
+    if (isIOS) {
+      content.innerHTML = [
+        '<div class="badge">iOS</div>',
+        '<div class="coming-soon">Segera di App Store</div>',
+        '<p class="subtitle">Aplikasi Kalianak Member sedang dalam persiapan.<br>Segera tersedia di App Store!</p>',
+        '<div class="store-btn"><span class="store-icon">🍎</span><span>App Store — Coming Soon</span></div>',
+      ].join('');
+    } else if (isAndroid) {
+      content.innerHTML = [
+        '<div class="badge">Android</div>',
+        '<div class="coming-soon">Segera di Google Play</div>',
+        '<p class="subtitle">Aplikasi Kalianak Member sedang dalam persiapan.<br>Segera tersedia di Google Play!</p>',
+        '<div class="store-btn"><span class="store-icon">▶</span><span>Google Play — Coming Soon</span></div>',
+      ].join('');
+    } else {
+      // Fallback: unknown platform
+      content.innerHTML = [
+        '<div class="coming-soon">Segera Hadir!</div>',
+        '<p class="subtitle">Buka halaman ini di iPhone atau Android kamu untuk melihat link download.</p>',
+      ].join('');
+    }
+  </script>
+</body>
+</html>
