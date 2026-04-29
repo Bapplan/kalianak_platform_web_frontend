@@ -4,7 +4,7 @@
 **Entry Point**: `index.tsx` → `App.tsx`
 **Parent Context**: [../CLAUDE.md](../CLAUDE.md)
 
-Public-facing website for Ikan Bakar Kalianak. Served at `www.ikanbakarkalianak.store`.
+Public-facing website for Ikan Bakar Kalianak. Served at `www.c-app.net`.
 
 ---
 

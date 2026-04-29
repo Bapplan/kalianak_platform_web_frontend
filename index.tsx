@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import PrivacyPage from './components/PrivacyPage';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -8,8 +9,9 @@ if (!rootElement) {
 }
 
 const root = ReactDOM.createRoot(rootElement);
+const Page = window.location.pathname === '/privacy' ? PrivacyPage : App;
 root.render(
   <React.StrictMode>
-    <App />
+    <Page />
   </React.StrictMode>
 );
