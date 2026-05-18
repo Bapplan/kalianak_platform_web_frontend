@@ -104,8 +104,8 @@ function App() {
       <ParallaxSection
         id="hero"
         imageUrl={isMobile
-          ? "https://s3.c-app.net/kalianak-media/web_frontend/images/index/index_bg_mobile.png"
-          : "https://s3.c-app.net/kalianak-media/web_frontend/images/index/index_bg.png"}
+          ? "https://s3.c-app.net/kalianak-media/web_frontend/images/index/index_bg_small.jpeg"
+          : "https://s3.c-app.net/kalianak-media/web_frontend/images/index/index_bg.jpeg"}
         overlayImageUrl={isMobile
           ? "https://s3.c-app.net/kalianak-media/web_frontend/images/index/index_overlay_mobile.webp"
           : "https://s3.c-app.net/kalianak-media/web_frontend/images/index/index_overlay.png"}
@@ -199,7 +199,7 @@ function App() {
       >
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <FadeIn>
-            <Heart className="w-12 h-12 text-ember-500 mx-auto mb-6 drop-shadow-[0_0_20px_rgba(239,68,68,0.8)]" />
+            <Heart className="w-12 h-12 text-ember-500 mx-auto mb-6 drop-shadow-[0_0_20px_rgba(222,185,146,0.8)]" />
             <h2 className="font-serif text-4xl md:text-7xl font-bold mb-8 text-white uppercase tracking-tight">
               {EXPERIENCE_CONTENT.title}
             </h2>
@@ -239,7 +239,7 @@ function App() {
                 }`}
               >
                 <div className="hidden md:block w-1/2"></div>
-                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-charcoal border-2 border-ember-500 rounded-full transform -translate-x-[7px] md:-translate-x-1/2 z-10 group-hover:bg-ember-500 group-hover:scale-125 transition-all duration-300 shadow-[0_0_10px_rgba(239,68,68,0.5)]">
+                <div className="absolute left-4 md:left-1/2 w-4 h-4 bg-charcoal border-2 border-ember-500 rounded-full transform -translate-x-[7px] md:-translate-x-1/2 z-10 group-hover:bg-ember-500 group-hover:scale-125 transition-all duration-300 shadow-[0_0_10px_rgba(222,185,146,0.5)]">
                 </div>
                 <div className="w-full md:w-1/2 pl-12 md:pl-0">
                   <FadeIn delay={index * 150}>
@@ -296,7 +296,7 @@ function App() {
               <div className="absolute inset-4 border-2 border-white/10 rounded-full animate-[spin_15s_linear_infinite_reverse]">
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <Flame className="w-24 h-24 text-ember-600 drop-shadow-[0_0_25px_rgba(220,38,38,1)] animate-pulse" />
+                <Flame className="w-24 h-24 text-ember-600 drop-shadow-[0_0_25px_rgba(222,185,146,1)] animate-pulse" />
               </div>
             </div>
           </div>
