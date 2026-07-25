@@ -13,7 +13,7 @@
 
 The digital storefront for Ikan Bakar Kalianak: a landing page, menu display, and
 restaurant information (location, hours, contact). Served in production at
-`www.ikanbakarkalianak.com`.
+`www.ikanbk.com`.
 
 ## 🧱 Tech Stack
 
@@ -55,5 +55,5 @@ patterns are documented yet.
 
 ## 🔗 Related Documents
 
-- [`CLAUDE.md`](CLAUDE.md) — sub-project notes
-- [`../CLAUDE.md`](../CLAUDE.md) — monorepo overview
+- [`AGENTS.md`](AGENTS.md) — sub-project notes
+- [`../AGENTS.md`](../AGENTS.md) — monorepo overview
